@@ -1,0 +1,16 @@
+name: multistage_example_workflow
+
+conda_env: conda.yaml
+
+entry_points:
+    main:
+        command: "python main.py"
+
+    stage_01:
+        command: "python stage_01.py"
+
+    stage_01:
+        command: "python stage_02.py"
+
+    stage_01:
+        command: "python stage_03.py"
